@@ -14,19 +14,19 @@
 
 .navbar .user h4 {
   color: #fff;
+  text-align: center;
 }
 
-.navbar nav {
-  /* background-color: blue; */
+.navbar .nav {
   width: 100%;
 }
 
-.navbar nav ul {
+.navbar .nav ul {
   width: 100%;
   flex-direction: column;
 }
 
-.navbar nav ul li {
+.navbar .nav ul li {
   border-bottom: 1px solid #ccc;
   padding: 1rem;
   position: relative;
@@ -34,13 +34,13 @@
   margin: 0;
 }
 
-.navbar nav ul li a {
+.navbar .nav ul li a {
   display: block;
   width: 100%;
   color: black;
 }
 
-.navbar nav ul li a:hover {
+.navbar .nav ul li a:hover {
   color: orangered;
 }
 

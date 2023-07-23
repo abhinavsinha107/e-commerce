@@ -9,7 +9,7 @@ const activeLink = ({ isActive }) => (isActive ? `${styles.active}` : "");
 
 const Navbar = () => {
   const userName = useSelector(selectUserName);
-  console.log(userName);  
+  // console.log(userName);  
 
   return (
     <div className={styles.navbar}>
@@ -17,7 +17,7 @@ const Navbar = () => {
         <FaUserCircle size={40} color="#fff" />
         <h4>{userName}</h4>
       </div>
-      <nav>
+      <div className={styles.nav}>
         <ul>
           <li>
             <NavLink to="/admin/home" className={activeLink}>
@@ -30,7 +30,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/admin/add-products" className={activeLink}>
+            <NavLink to="/admin/add-product/ADD" className={activeLink}>
               Add Products
             </NavLink>
           </li>
@@ -40,7 +40,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-      </nav>
+      </div>
     </div>
   );
 };

@@ -7,7 +7,6 @@ import { sliderData } from "./slider-data";
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideLength = sliderData.length;
-  console.log(slideLength);
 
   const autoScroll = true;
   let slideInterval;
